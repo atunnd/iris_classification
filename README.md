@@ -1,5 +1,8 @@
-# iris_classification
-In this project, I practice machine learning approaches to classify the iris flower based on its tabular data. The iris data can be loaded through scikit-learn library:
+# My ML learning tracker
+In this project, I practice machine learning approaches to classification task.
+## Datasets 
+1. Iris dataset. 
+The iris data can be loaded through scikit-learn library:
 
 ```python
 from sklearn import datasets
