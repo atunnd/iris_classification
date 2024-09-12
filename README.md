@@ -78,3 +78,14 @@ A non-parametric supervised method used for classification and regression.
 ### 2.4 Reference
 - https://www.w3schools.com/python/python_ml_decision_tree.asp 
 - https://scikit-learn.org/stable/modules/tree.html 
+
+## 3. Ensemble learning
+### 3.1 Random Forest
+According to scikit-learn doccument, a random forest is a meta estimator that fits a number of decision tree classifiers / regressors on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. 
+Steps:
+- Create ***Bootstrapped*** dataset (randomly sample from original dataset) and ***out-of-bag*** dataset (samples not included in bootstrapped dataset)
+- If there are missing values, using ***Proximity Matrix*** to fill in. However, we should drop rows with missing values if there are too much missing values.
+
+Reference:
+- https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html 
+- https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
