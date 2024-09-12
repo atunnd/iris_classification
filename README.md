@@ -89,3 +89,6 @@ Steps:
 Reference:
 - https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html 
 - https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+
+## 4. Clustering
+### 4.1 Proximity Matrix
