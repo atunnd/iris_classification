@@ -1,8 +1,8 @@
 # My ML learning tracker
 In this project, I practice machine learning approaches to classification task. For each approach, I implement the models from different machine learning and deep learning libraries and also, I try to reproduce the results on my own python code.
 ## Datasets 
-### 1. Iris dataset. 
-The iris data can be loaded through scikit-learn library:
+### 1. Iris dataset
+The iris dataset is used for experiments with classification tasks. Here is the code to load the dataset from scikit-learn library:
 
 ```python
 from sklearn import datasets
@@ -45,9 +45,36 @@ df = pd.DataFrame(data, columns=attribute_names)
 print(df)
 ```
 
+### 3. Diabetes dataset
+The diabete dataset is used for practicing with regression tasks. Here is the code for load the dataset with scikit-learn library:
+```python
+from sklearn.datasets import load_diabetes
+diabetes = load_diabetes()
+```
+
 ## 1. K Nearest Neighbors (KNN folder)
 For KNN approach, the model configuration is:
 - k = 5
 - distance_metric='minkowski'
 - algorithm_neighbors='brute'
 - weight='uniform', p=2
+
+## 2. Decision Trees
+A non-parametric supervised method used for classification and regression.
+### 2.1 Classification
+- Using GINI and Entropy as criteria to split tree
+- GINI is used to measure the impurity of a node:
+![alt text](image.png)
+- Entropy is used to measure the uncertainty of a node:
+![alt text](image-1.png)
+
+### 2.2 Regression
+- Using Sum of Squared Residuals (SSR) to determine split
+![alt text](image-2.png)
+
+### 2.3 Reduce overfitting in DT
+- prunning tree
+
+### 2.4 Reference
+- https://www.w3schools.com/python/python_ml_decision_tree.asp 
+- https://scikit-learn.org/stable/modules/tree.html 
